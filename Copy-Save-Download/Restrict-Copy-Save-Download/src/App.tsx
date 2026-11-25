@@ -6,6 +6,7 @@ import {
   Magnification,
   Navigation,
   SlideShow,
+  Print,
   RibbonItemId,
   RibbonTabId,
   Inject
@@ -56,6 +57,7 @@ function App() {
         enableTextSelection={false} disables text selection.
         enableDownload={false} disables File -> Export.
         enableCopy={false} disables copying.
+        enablePrint={false} disables printing.
         documentPath specifies the PPTX file to load.
       */}
       <PptxEditorComponent
@@ -64,10 +66,10 @@ function App() {
         enableTextSelection={false}
         enableDownload={false}
         enableCopy={false}
+        enablePrint={false}
         documentPath='/documents/Sample.pptx'
       >
-        {/* Inject modules except Print disables File -> Print. */}
-        <Inject services={[Toolbar, ThumbnailView, Magnification, Navigation, SlideShow]} />
+        <Inject services={[Toolbar, ThumbnailView, Magnification, Navigation, SlideShow, Print]} />
       </PptxEditorComponent>
     </div>
   );
