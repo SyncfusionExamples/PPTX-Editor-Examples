@@ -8,7 +8,7 @@ This sample demonstrates how to configure the **Syncfusion React PPTX Editor** a
 - Disables copying through editor commands using `enableCopy={false}`.
 - Disables text selection using `enableTextSelection={false}`.
 - Disables presentation export using `enableDownload={false}`.
-- Disables print functionality by excluding the `Print` module.
+- Disables print functionality using `enablePrint={false}`.
 - Blocks native `Copy` and `Cut` operations.
 - Blocks browser save (`Ctrl/Cmd + S`) and print (`Ctrl/Cmd + P`) shortcuts.
 - Demonstrates how to hide ribbon commands such as **Copy**.
@@ -42,7 +42,7 @@ npm install
 | `enableCopy={false}` | Disables copy operations provided by the PPTX Editor. |
 | `enableTextSelection={false}` | Prevents users from selecting slide content. |
 | `enableDownload={false}` | Disables the **File → Export** option. |
-| Excluding `Print` service | Disables the **File → Print** option. |
+| `enablePrint={false}` | Disables the **File → Print** option. |
 
 ---
 
